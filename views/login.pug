@@ -1,0 +1,18 @@
+﻿extends layout
+
+block content
+  h1= title
+
+  form(
+    method="post"
+    action="/submit-student-data"
+  )
+        | 用戶：
+        input(name="firstName")
+        br
+        | 密碼：
+        input(nane="lastName")
+        // 這是註解測試
+        br
+        input(type="submit")
+
